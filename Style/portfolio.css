@@ -43,10 +43,10 @@
 }
 .ctn:hover{
     background-size: 100%;
-            color:white
+            color:rgb(0, 255, 55);
             /* -webkit-text-stroke: 1px #fef4f4; */
-            text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
-            1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+            /* text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+            1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
 }
 .atn{
     color: #000;
