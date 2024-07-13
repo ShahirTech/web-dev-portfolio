@@ -1,0 +1,51 @@
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skills-container, 
+    .resume-container, 
+    footer,
+    .about-items,
+    .banner,
+    nav, 
+    nav > ul
+    {
+        flex-direction: column;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    nav> ul{
+        gap: 20px;
+    }
+
+    .btn, .ctn{
+        margin-bottom: 20px;
+    }
+
+    .pp{
+        width: 100%;
+    }
+
+    .banner{
+        margin: 20px;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],  footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    
+}
