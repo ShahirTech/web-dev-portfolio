@@ -211,3 +211,9 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     margin-bottom: 24px;
     border: none;
 }
+textarea{
+    resize: none;
+}
+.atn{
+    color: blueviolet;
+}

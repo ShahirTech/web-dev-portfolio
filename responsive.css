@@ -1,24 +1,21 @@
 .hide{
     display: none;
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 320px) and (max-width: 776px) {
     .skills-container, 
-    .resume-container, 
-    footer,
-    .about-items,
-    .banner,
-    nav, 
-    nav > ul
+    .resume-container,
+    .about-items
     {
         flex-direction: column;
     }
 
     .header{
-        background-image: none;
+        background-image: non;
     }
 
     nav> ul{
         gap: 20px;
+        display: none;
     }
 
     .btn, .ctn{
@@ -27,18 +24,62 @@
 
     .pp{
         width: 100%;
+        z-index: 0;
+        position: absolute;
+    }
+    .banner-content{
+        z-index: 1;
+        text-align: center;
+        padding-top: 300px;
     }
 
+    .btn, .ctn{
+        font-size: 14px;
+        text-wrap: nowrap;
+    }
+
+    .banner-content
+    h1{
+        font-size: 24px;
+        color: blueviolet;
+        text-wrap: nowrap;
+    }
+    .banner-content h4{
+        font-size: 20px;
+        color: white;
+        margin-bottom: -10px;
+    }
+    .banner-content p{
+        color: white;
+    }
+    nav{
+        margin-left: auto;
+        margin-right: auto;
+        
+    
+    }
     .banner{
         margin: 20px;
+        position: relative;
+        flex-direction: column-reverse;
     }
-    footer, .about{
+.section-title{
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    footer, .about {
         padding: 20px;
     }
 
     .left{
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
     }
     
     .footer-column{
@@ -47,5 +88,16 @@
     footer input[type="text"],  footer input[type="email"], footer textarea{
         width: calc(100% - 40px);
     }
-    
+
+    .skills-container , .section-description, .resume-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .about, .resume{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .nav-title{
+        margin: 0 auto;
+    }
 }
